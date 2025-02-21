@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    font-family:"Poppins",sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color:#7b66da;
+}
+.image
+{
+    margin: 0 auto;
+    height:400px;
+    width:600px;
+    display: block;
+    border-radius:  50px;
+}
+.box
+{
+    text-align:center;
+    width:800px;
+    height:50px;
+    font-family:"Poppins",sans-serif;
+    border:2px solid black;
+    border-radius:50px 0px 50px 0px ;
+    background-color: rgb(60, 244, 9);
+    color:rgb(26, 160, 205);
+    align-content:center;
+    margin:auto; 
+}
+.text
+{
+    text-align:center;
+    width:800px;
+    height:80px;
+    font-family:"Poppins",sans-serif;
+    border:2px solid black;
+    border-radius:0px 50px 0px 50px;
+    color: #3B6790;
+    background-color:#EFB036;
+    align-content:center;
+    margin:auto;
+}
+.main
+{
+    align-content: center;
+}
+.msg{
+    width:1200px;
+    height:40px;
+    border:2px solid black;
+    border-radius: 25px;
+    margin-top:15px;
+    margin-left:25px;
+    font-size: large;
+    margin-bottom:15px;
+}
+form input[type="submit"]
+{
+    background-color:#090909;
+    color:#fff;
+    cursor:pointer;
+    width:120px;
+    height: 50px;
+    border-radius: 25px;
+    display:inline;
+    transition: 2s;
+}
+form input[type="submit"]:hover{
+    background-color: #960628;
+    transition: 1s;
+}
+form label
+{
+    margin-left: 25px;
+    width:auto;
+    height:29px;
+    padding:8px;
+    font-family:"Poppins",sans-serif;
+    border:2px solid black;
+    border-radius:50px;
+    background-color: rgb(0, 0, 0);
+    color:rgb(63, 186, 228);
+    margin-top:10px;
+}
+.response
+{
+    width:300px;
+    color: aliceblue;
+    height:29x;
+    padding:6px;
+    border:2px solid black;
+    border-radius: 25px;
+    margin-top:15px;
+    font-size: large;
+    margin-bottom:15px;
+    text-align: center;;
+    background-color: #090909;
+}
+.cont
+{
+    display: flex;
+    flex-direction: row;
+}
+.main{
+    background-color: ;
+}

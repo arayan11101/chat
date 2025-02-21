@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="static/main.css">
+    <script>
+        function clearMessage() {
+            document.getElementById("message").value = "";
+            document.getElementById("response").innerText = "----";
+        }
+    </script>
+</head>
+<body>
+    <h1 class="box" id="one">Chat bot with Sentimental Analysis</h1>
+    <img class="image" src="{{ url_for('static', filename='cover.jpg') }}">
+    <p class="text">Hi👋, I'm your chatbot with sentimental capabilities🤗.I'm trained with IMDB dataset so that if you give me any statement regarding movies, I will tell you the sentiment of it!!</p>
+    <form method="POST" action="">
+        {{form.hidden_tag()}}
+        <div class="main">
+            {{form.message(class="msg")}}
+            {{ form.submit }}
+            {{ form.clear(onclick="clearMessage()")}}
+            <div class="cont">
+                <label for="message" >Sentiment of your message</label>
+                <div id="response" class="response" >{{response}}</div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
